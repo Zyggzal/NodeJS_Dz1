@@ -1,0 +1,14 @@
+<form action="add" method="post" class="form">
+    <label for="name">Name: <input type="text" name="name" class="form-input" required></label>
+    <label for="age">Age: <input type="number" name="age" class="form-input" required></label>
+    {{#if groups.length }}
+    <label for="groupId">Group: 
+        <select name="groupId" class="form-select form-select-sm">
+            {{#each groups}}
+                <option value="{{id}}">{{name}}</option>
+            {{/each}}
+        </select>
+    </label>
+    {{/if}}
+    <button class="btn btn-outline-info" type="submit">Add</button>
+</form>

@@ -1,0 +1,21 @@
+<form class="form d-flex flex-row justify-content-evenly p-5" action="/calc" method="post">
+    <div>
+        <p>A:</p>
+        <input type="number" name="A" class="form-input" value="{{A}}">
+    </div>
+    <div class="d-flex align-items-center">
+        <select class="form-select form-select-sm" name="op">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+    </div>
+    <div>
+        <p>B:</p>
+        <input type="number" name="B" class="form-input" value="{{B}}">
+    </div>
+    <button class="btn btn-outline-info" type="submit">=</button>
+    <h3 class="text-info">{{res}}</h3>
+</form>
